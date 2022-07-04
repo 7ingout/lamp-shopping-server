@@ -18,8 +18,12 @@ module.exports = function (sequelize, DataTypes) {
         }, 
         seller: {
             type: DataTypes.STRING(200),
-            allownull: false
+            allowNull: false
         },
+        description: {
+            type: DataTypes.STRING(500),
+            allowNull: false
+        }
     });
     return product;
 }
